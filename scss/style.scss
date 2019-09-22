@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* base */
+body{
+  font-family:'NanumBarunGothic','dotum';
+}
+.inner{
+  width:100%; 
+  margin:0 auto; 
+  position:relative;
+}
+.mobile{
+  display:none;
+}
+
+/*header*/
+header{
+  background:#f0f1f2;
+
+  #gnb {
+    text-align:center;
+    a{
+      font-size:12px;
+      color:#999999; 
+      font-family:'NanumBarunGothic','dotum';
+    font-weight:normal; 
+    text-decoration:none; 
+    transition:all .4s; 
+    border-bottom:2px solid transparent;
+    }
+    li a:hover{
+      color:#333333; 
+      border-bottom:2px solid #fff; 
+      padding-bottom:5px;
+    }
+    li{
+      display:inline-block; 
+      margin:20px 0 0 18px;
+    }
+  }//#gnb
+
+
+  #logo{
+    text-align:center; 
+    margin-top:20px;
+    position:relative; 
+    z-index:1;
+    h1{
+      text-align:center;
+    }
+   a{
+    text-decoration:none; 
+    color:#333; 
+    text-indent:-999px;
+    font-weight:normal;
+    font-family: 'Staatliches', cursive;
+    font-size:40px;}
+  }//#logo
+
+  #gnb2{
+    background:rgba(249,249,250,.5); 
+    text-align:center; 
+    position:relative; 
+    z-index:1;
+    a{
+      color:#333; 
+      text-decoration:none; 
+      transition:all .4s; 
+      border-bottom:2px solid transparent;
+      font-size:14px;
+      font-family:'NanumBarunGothic';
+      font-weight:normal;
+    }
+    a:hover{
+      border-bottom:2px solid #fff; 
+      padding-bottom:18px;
+    }
+    li{
+      display:inline-block; 
+      padding:21px;
+    }
+  }//#gnb2
+}//header
+
+/*#wrap*/
+#wrap{
+  #main_view{
+    margin-top:-147px; 
+    height:952px; 
+    text-indent:-9999px;
+    background:url("../images/main_view.jpg")no-repeat; background-size:cover;
+  }//#main_view
+}//#wrap
+
+
+//device-width : 0 ~ 720px
+@media (max-width:720px){
+  .pc{
+    display:none;
+  } 
+  .mobile{
+    display:inline-block;
+  }
+  #gnb2{
+    li{
+      display: block !important; 
+      border:1px solid #ccc; 
+      max-width:80%; 
+      position:relative; 
+      right:-6.5%;
+      background:linear-gradient(rgba(200,200,200,.1),rgba(177,177,177,.1) 50%);
+    }
+    li:first-child{
+      border-radius:15px 15px 0 0;
+    }
+    li:last-child{
+      border-radius:0 0 15px 15px;
+    }
+  }//#gnb2
+
+  #wrap{
+    #main_view{
+      margin-top:-440px; background-size:100% 48%;
+    }
+    #main_view a{
+      display:none;
+    }
+  }//#wrap
+}//@media
