@@ -1,3 +1,6 @@
 # 반응형 포트폴리오 Tables
 
-1. Reset.css 적용 오류. ( vscode scss )
+전체적인 레이아웃 및 디자인 리뉴얼
+Reset.css @import 해결
+메뉴 클릭시 네비게이션 바 추가
+카트(장바구니) 배치
