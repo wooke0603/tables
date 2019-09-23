@@ -2,7 +2,13 @@
 @import url("reset.css");
 
 /* base */
+html{
+    transition:all 1s;
+}
 body{
+    -webkit-transition: all 1s;
+    transition: all 4s;
+    opacity: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
 a{
